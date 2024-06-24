@@ -1,0 +1,86 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34601.278
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Satrack.Api", "Satrack.Api\Satrack.Api.csproj", "{782A7FF4-F65D-4EC6-BB91-9000A312DA91}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Satrack.Infraestructure", "Satrack.Infraestructure\Satrack.Infraestructure.csproj", "{5016C71E-7709-4BF3-9AA1-75B35E2421F7}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Satrack.Domain", "Satrack.Domain\Satrack.Domain.csproj", "{8B4FE243-FFCA-482F-BAC5-92B709CE90BE}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Satrack.Application", "Satrack.Application\Satrack.Application.csproj", "{6D7BC638-D043-4726-BC22-64A706E6A162}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{A28CAE0E-15B4-4215-B4FD-140CF69F7458}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "doc", "doc", "{F3D6D41F-637F-468A-AEC8-DE035C8FAABA}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{C796BF87-2844-41D5-9997-0AF91D1FAA77}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Satrack.Application.UnitTest", "Satrack.Application.UnitTest\Satrack.Application.UnitTest.csproj", "{C4BD54E6-3F98-4B06-897D-033EC2CC3F93}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{DE811257-F36B-48B6-AABD-435CF6D25252}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "API", "API", "{3C5FA681-C96B-4E23-AA89-F0570ABEE563}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{8411851F-58B7-4606-9E86-CB5D883F79A7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infraestructure", "Infraestructure", "{C6924DD6-540F-4E00-A388-F3D361C4C590}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Satrack.Identity", "Satrack.Identity\Satrack.Identity.csproj", "{853D5C25-CF8F-4807-8403-0FC5EBB686F7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{782A7FF4-F65D-4EC6-BB91-9000A312DA91}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{782A7FF4-F65D-4EC6-BB91-9000A312DA91}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{782A7FF4-F65D-4EC6-BB91-9000A312DA91}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{782A7FF4-F65D-4EC6-BB91-9000A312DA91}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5016C71E-7709-4BF3-9AA1-75B35E2421F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5016C71E-7709-4BF3-9AA1-75B35E2421F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5016C71E-7709-4BF3-9AA1-75B35E2421F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5016C71E-7709-4BF3-9AA1-75B35E2421F7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8B4FE243-FFCA-482F-BAC5-92B709CE90BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8B4FE243-FFCA-482F-BAC5-92B709CE90BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8B4FE243-FFCA-482F-BAC5-92B709CE90BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8B4FE243-FFCA-482F-BAC5-92B709CE90BE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6D7BC638-D043-4726-BC22-64A706E6A162}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6D7BC638-D043-4726-BC22-64A706E6A162}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6D7BC638-D043-4726-BC22-64A706E6A162}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6D7BC638-D043-4726-BC22-64A706E6A162}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C4BD54E6-3F98-4B06-897D-033EC2CC3F93}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C4BD54E6-3F98-4B06-897D-033EC2CC3F93}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C4BD54E6-3F98-4B06-897D-033EC2CC3F93}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C4BD54E6-3F98-4B06-897D-033EC2CC3F93}.Release|Any CPU.Build.0 = Release|Any CPU
+		{853D5C25-CF8F-4807-8403-0FC5EBB686F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{853D5C25-CF8F-4807-8403-0FC5EBB686F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{853D5C25-CF8F-4807-8403-0FC5EBB686F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{853D5C25-CF8F-4807-8403-0FC5EBB686F7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{782A7FF4-F65D-4EC6-BB91-9000A312DA91} = {3C5FA681-C96B-4E23-AA89-F0570ABEE563}
+		{5016C71E-7709-4BF3-9AA1-75B35E2421F7} = {C6924DD6-540F-4E00-A388-F3D361C4C590}
+		{8B4FE243-FFCA-482F-BAC5-92B709CE90BE} = {8411851F-58B7-4606-9E86-CB5D883F79A7}
+		{6D7BC638-D043-4726-BC22-64A706E6A162} = {8411851F-58B7-4606-9E86-CB5D883F79A7}
+		{C4BD54E6-3F98-4B06-897D-033EC2CC3F93} = {A28CAE0E-15B4-4215-B4FD-140CF69F7458}
+		{3C5FA681-C96B-4E23-AA89-F0570ABEE563} = {DE811257-F36B-48B6-AABD-435CF6D25252}
+		{8411851F-58B7-4606-9E86-CB5D883F79A7} = {DE811257-F36B-48B6-AABD-435CF6D25252}
+		{C6924DD6-540F-4E00-A388-F3D361C4C590} = {DE811257-F36B-48B6-AABD-435CF6D25252}
+		{853D5C25-CF8F-4807-8403-0FC5EBB686F7} = {C6924DD6-540F-4E00-A388-F3D361C4C590}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5D34DB4A-EF45-4537-8A9D-1484094E67DB}
+	EndGlobalSection
+EndGlobal

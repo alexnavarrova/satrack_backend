@@ -1,0 +1,67 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Services\**" />
+    <EmbeddedResource Remove="Services\**" />
+    <None Remove="Services\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.1" />
+    <PackageReference Include="FluentValidation" Version="11.7.1" />
+    <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="11.7.1" />
+    <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="10.0.1" />
+    <PackageReference Include="MediatR" Version="10.0.1" />
+    <PackageReference Include="LazyCache" Version="2.4.0" />
+    <PackageReference Include="Microsoft.Extensions.Caching.Memory" Version="8.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration" Version="8.0.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="Features\" />
+    <None Remove="MappingsMappings\" />
+    <None Remove="Behaviours\" />
+    <None Remove="Exceptions\" />
+    <None Remove="Messages\" />
+    <None Remove="Services\" />
+    <None Remove="Contracts\" />
+    <None Remove="Contracts\Persistence\" />
+    <None Remove="Features\Book\" />
+    <None Remove="Features\Categories\Commands\" />
+    <None Remove="Models\" />
+    <None Remove="Models\Identity\" />
+    <None Remove="Contracts\Identity\" />
+    <None Remove="Constants\" />
+    <None Remove="Features\Categories\Commands\CreateBook\" />
+    <None Remove="Features\Categories\Commands\CreateCategory\Dtos\" />
+    <None Remove="Features\Categories\Commands\DeleteBook\" />
+    <None Remove="Features\Categories\Queries\" />
+    <None Remove="Features\Categories\Queries\GetBooksList\" />
+    <None Remove="Features\Categories\Queries\GetCategoriesList\Dtos\" />
+    <None Remove="Features\BookLoan\" />
+    <None Remove="Features\Tasks\Commands\" />
+    <None Remove="Features\Tasks\Commands\CreateBookLoan\" />
+    <None Remove="Common\" />
+    <None Remove="Features\Tasks\Commands\ReturnBookLoan\" />
+    <None Remove="Features\Tasks\Queries\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="MappingsMappings\" />
+    <Folder Include="Behaviours\" />
+    <Folder Include="Exceptions\" />
+    <Folder Include="Messages\" />
+    <Folder Include="Models\" />
+    <Folder Include="Models\Identity\" />
+    <Folder Include="Contracts\Identity\" />
+    <Folder Include="Constants\" />
+    <Folder Include="Common\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Satrack.Domain\Satrack.Domain.csproj" />
+  </ItemGroup>
+</Project>
