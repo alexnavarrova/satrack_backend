@@ -2,7 +2,6 @@
 using System.Net;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Authorization;
-using Satrack.Application.Features.Book.Queries.GetBooksList;
 using Satrack.Application.Features.Categories.Commands.CreateCategory;
 using Satrack.Application.Features.Categories.Queries.GetCategoriesList;
 

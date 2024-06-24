@@ -5,7 +5,7 @@ using Satrack.Application.Contracts.Persistence;
 using Satrack.Application.Features.Categories.Commands.CreateCategory;
 using Microsoft.Extensions.Logging;
 
-namespace Satrack.Application.Features.Category.Commands.CreateBook
+namespace Satrack.Application.Features.Category.Commands.CreateCategory
 {
 
     public class CreateCategoryCommandHandler : IRequestHandler<CreateCategoryCommand, Unit>

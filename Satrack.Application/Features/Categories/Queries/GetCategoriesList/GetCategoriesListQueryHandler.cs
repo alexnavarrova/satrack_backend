@@ -1,9 +1,8 @@
 ﻿using MediatR;
 using AutoMapper;
 using Satrack.Application.Contracts.Persistence;
-using Satrack.Application.Features.Categories.Queries.GetCategoriesList;
 
-namespace Satrack.Application.Features.Book.Queries.GetBooksList
+namespace Satrack.Application.Features.Categories.Queries.GetCategoriesList
 {
     public class GetCategoriesListQueryHandler : IRequestHandler<GetCategoriesListQuery, List<CategoryList>>
     {

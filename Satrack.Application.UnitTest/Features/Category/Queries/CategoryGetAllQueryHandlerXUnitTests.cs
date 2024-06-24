@@ -4,10 +4,11 @@ using AutoMapper;
 using Satrack.Application.Mappings;
 using Satrack.Application.UnitTest.Mocks;
 using Satrack.Infraestructure.Repositories;
-using Satrack.Application.Features.Book.Queries.GetBooksList;
 using Satrack.Application.Features.Categories.Queries.GetCategoriesList;
 
-namespace Satrack.Application.UnitTest.Features.Book.Queries
+
+
+namespace Satrack.Application.UnitTest.Features.Category.Queries
 {
     public class CategoryGetAllQueryHandlerXUnitTests
 	{

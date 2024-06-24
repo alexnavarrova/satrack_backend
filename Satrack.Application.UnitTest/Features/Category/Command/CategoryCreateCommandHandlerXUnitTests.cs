@@ -4,23 +4,19 @@ using MediatR;
 using Shouldly;
 using AutoMapper;
 using Microsoft.Extensions.Logging;
-using Satrack.Infraestructure.Repositories;
-using Satrack.Application.Features.Tasks.Commands.CreateTask;
-using Satrack.Application.Features.Category.Commands.CreateBook;
-using Satrack.Application.Features.Categories.Commands.CreateCategory;
 using Satrack.Application.Mappings;
 using Satrack.Application.UnitTest.Mocks;
-using FluentValidation;
+using Satrack.Infraestructure.Repositories;
+using Satrack.Application.Features.Categories.Commands.CreateCategory;
+using Satrack.Application.Features.Category.Commands.CreateCategory;
 
-namespace Satrack.Application.UnitTest.Features.Book.Command
+namespace Satrack.Application.UnitTest.Features.Category.Command
 {
     public class CategoryCreateCommandHandlerXUnitTests
 	{
         private readonly IMapper _mapper;
         private readonly Mock<UnitOfWork> _unitOfWork;
         private readonly Mock<ILogger<CreateCategoryCommandHandler>> _logger;
-        private readonly Mock<IValidator<CreateTaskCommand>> _mockValidator;
-        private readonly CreateTaskCommandHandler _handler;
 
 
         public CategoryCreateCommandHandlerXUnitTests()
@@ -33,7 +29,6 @@ namespace Satrack.Application.UnitTest.Features.Book.Command
             _mapper = mapperConfig.CreateMapper();
 
             _logger = new Mock<ILogger<CreateCategoryCommandHandler>>();
-            _mockValidator = new Mock<IValidator<CreateTaskCommand>>();
 
             MockCategoryRepository.AddDataCategoryRepository(_unitOfWork.Object.ApplicationDbContext);
 
@@ -44,14 +39,14 @@ namespace Satrack.Application.UnitTest.Features.Book.Command
         [Fact]
         public async Task CreateCategoryCommand_InputCategoria_ReturnsUnit()
         {
-            var bookCreate = new CreateCategoryCommand
+            var categoryCreate = new CreateCategoryCommand
             {
                 Name = "Categoria 3",
             };
 
             var handler = new CreateCategoryCommandHandler(_logger.Object, _unitOfWork.Object, _mapper);
 
-            var result = await handler.Handle(bookCreate, CancellationToken.None);
+            var result = await handler.Handle(categoryCreate, CancellationToken.None);
 
             result.ShouldBeOfType<Unit>();
         }

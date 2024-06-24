@@ -1,7 +1,7 @@
 ﻿using FluentValidation;
 using Satrack.Application.Features.Categories.Commands.CreateCategory;
 
-namespace Satrack.Application.Features.Category.Commands.CreateBook
+namespace Satrack.Application.Features.Category.Commands.CreateCategory
 {
 	public class CreateCategoryCommandValidator : AbstractValidator<CreateCategoryCommand>
     {
